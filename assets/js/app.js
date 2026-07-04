@@ -12,10 +12,27 @@ let movies = [];
 
 let filteredMovies = [];
 
+function showLoading() {
+
+    moviesContainer.innerHTML = `
+        <div class="col-12 text-center my-5">
+
+            <div class="spinner-border text-success"
+                 role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <p class="mt-3">Loading Studio Ghibli movies...</p>
+
+        </div>
+    `;
+
+}
+
 async function getMovies() {
 
     try {
-
+        showLoading();
         const response = await fetch(API_URL);
         movies = await response.json();
 
