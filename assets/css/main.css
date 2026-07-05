@@ -3,7 +3,7 @@
   --background-color: #040000; /* Background color for the entire website, including individual sections */
   --default-color: #f8f8f8; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e59d02; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #115478; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #191919; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -11,6 +11,11 @@
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
+}
+
+.btn {
+  background-color: var(--accent-color) !important;
+  color: var(--contrast-color) !important;
 }
 
 /*--------------------------------------------------------------
@@ -36,7 +41,6 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
@@ -48,7 +52,17 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--contrast-color) !important;
+  text-decoration: none !important;
+  text-underline-offset: none !important;
+}
+
+.header .logo,
+.header .logo:visited,
+.header .logo:hover,
+.header .logo:focus {
+    text-decoration: none;
+    color: var(--contrast-color);
 }
 
 .header .btn-getstarted,

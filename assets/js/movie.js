@@ -60,14 +60,8 @@ async function renderMovie(movie) {
 
                 <hr>
 
-                <a href="index.html" class="btn btn-success">
+                <a href="index.html" class="btn">
                     ← Back to Explorer
-                </a>
-
-                <a href="${movie.url}"
-                   target="_blank"
-                   class="btn btn-outline-secondary">
-                    API Endpoint
                 </a>
 
             </div>

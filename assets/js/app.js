@@ -104,7 +104,7 @@ function createMovieCard(movie) {
                     <!-- Footer -->
                     <div class="mt-auto pt-3">
 
-                        <button class="btn btn-outline-success btn-sm w-100"
+                        <button class="btn w-100"
                                 onclick="event.stopPropagation(); goToDetails('${movie.id}')">
                             View Details
                         </button>
@@ -141,7 +141,7 @@ function createPagination() {
     for (let i = 1; i <= totalPages; i++) {
 
         pagination.innerHTML += `
-            <button class="btn btn-outline-success mx-1 ${i === currentPage ? "active" : ""}"
+            <button class="btn mx-1 ${i === currentPage ? "active" : ""}"
                     onclick="goToPage(${i})">
                 ${i}
             </button>
