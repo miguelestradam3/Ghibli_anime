@@ -13,7 +13,7 @@
   scroll-behavior: smooth;
 }
 
-.btn {
+.btn, .spinner-border, .text-success {
   background-color: var(--accent-color) !important;
   color: var(--contrast-color) !important;
 }
