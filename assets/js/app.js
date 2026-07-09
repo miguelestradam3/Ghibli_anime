@@ -98,6 +98,7 @@ function createMovieCard(movie) {
                     </p>
 
                     <p class="mb-1">
+                        <p><strong>Score:</strong> (${movie.rt_score}/100)</p>
                         <div class="progress">
                             <div class="progress-bar bg-success"
                                 style="width: ${movie.rt_score}%;">
